@@ -1,0 +1,139 @@
+python-passlib (1.7.4-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Update Maintainer field with new Debian Python Team
+    contact address.
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Sandro Tosi ]
+  * New upstream release; Closes: #981821
+  * debian/copyright
+    - update upstream copyright years
+    - update Source field to heptapod repo location
+  * debian/control
+    - update Homepage to https://passlib.readthedocs.io; Closes: #983685
+
+ -- Sandro Tosi <morph@debian.org>  Sun, 28 Feb 2021 23:58:42 -0500
+
+python-passlib (1.7.2-2) unstable; urgency=medium
+
+  * Drop python2 support; Closes: #938002
+
+ -- Sandro Tosi <morph@debian.org>  Sat, 28 Mar 2020 12:00:52 -0400
+
+python-passlib (1.7.2-1) unstable; urgency=medium
+
+  [ Emmanuel Arias ]
+  * Team upload.
+  * New upstream version 1.7.2.
+
+  [ Ondřej Nový ]
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/copyright: Fix Format URL to correct one
+  * d/control: Deprecating priority extra as per policy 4.0.1
+  * d/watch: Use https protocol
+  * Convert git repository from git-dpm to gbp layout
+  * Use debhelper-compat instead of debian/compat.
+
+  -- Emmanuel Arias <eamanu@yaerobi.com>  Tue, 04 Feb 2020 17:18:19 -0300
+
+python-passlib (1.7.1-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.  (Closes: #852289)
+  * d/patches/0001-Disable-Django-support.patch: Dropped as upstream issue
+    should now be fixed.
+
+ -- Sandro Tosi <morph@debian.org>  Sat, 28 Mar 2020 11:54:11 -0400
+
+python-passlib (1.7.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.  (Closes: #844233)
+  * d/control:
+    - Bump Standards-Version with no other changes necessary.
+    - Bump debhelper version dependency to >= 9.
+  * d/compat: Bump to version 9.
+
+ -- Barry Warsaw <barry@debian.org>  Mon, 28 Nov 2016 11:31:28 -0500
+
+python-passlib (1.6.5-4) unstable; urgency=medium
+
+  * Disable Django tests.
+  * I believe none of the packages that depend on python-passlib use the
+    Django stuff.
+  * Can be reversed as soon as
+    https://bitbucket.org/ecollins/passlib/issues/68/tests-fail-with-django-19
+    is fixed.
+  * Closes: #806366.
+
+ -- Brian May <bam@debian.org>  Sun, 03 Jan 2016 14:32:44 +1100
+
+python-passlib (1.6.5-3) unstable; urgency=medium
+
+  * Run tests for Python 3.4 and Python 3.5
+
+ -- Brian May <bam@debian.org>  Mon, 26 Oct 2015 14:20:14 +1100
+
+python-passlib (1.6.5-2) unstable; urgency=medium
+
+  * Update Vcs-* headers.
+  * Update standards-version to 3.9.6.
+  * Update homepage.
+
+ -- Brian May <bam@debian.org>  Thu, 15 Oct 2015 17:04:03 +1100
+
+python-passlib (1.6.5-1) unstable; urgency=medium
+
+  * Make package DPMT maintained. With permission of original maintainer,
+    see #795662.
+  * New upstream version. Closes: #794752.
+  * Remove '--with-doctest' option to tests. See
+    https://bitbucket.org/ecollins/passlib/issues/61/tests-fail
+    Closes: #795662.
+
+ -- Brian May <bam@debian.org>  Mon, 24 Aug 2015 17:59:12 +1000
+
+python-passlib (1.6.1-1.3) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Add missing licenses. Closes: #752080.
+
+ -- Brian May <bam@debian.org>  Mon, 01 Dec 2014 16:57:16 +1100
+
+python-passlib (1.6.1-1.2) unstable; urgency=low
+
+  * Non-maintainer upload, with permission.
+  * Fix python3-passlib depends.
+
+ -- Brian May <bam@debian.org>  Wed, 18 Jun 2014 13:16:33 +1000
+
+python-passlib (1.6.1-1.1) unstable; urgency=low
+
+  * Non-maintainer upload, with permission.
+  * Support Python 3. Closes: #751758.
+  * Add missing build depends for python-nose.
+  * Update standards version to 3.9.5.
+
+ -- Brian May <bam@debian.org>  Wed, 18 Jun 2014 09:13:20 +1000
+
+python-passlib (1.6.1-1) unstable; urgency=low
+
+  * New upstream release
+  * Bump standards version
+
+ -- Julien Danjou <acid@debian.org>  Mon, 10 Sep 2012 14:42:19 +0200
+
+python-passlib (1.5.3-2) unstable; urgency=low
+
+  * Fix arch
+  * Switch to dh_python2
+
+ -- Julien Danjou <acid@debian.org>  Thu, 12 Jan 2012 14:51:13 +0100
+
+python-passlib (1.5.3-1) unstable; urgency=low
+
+  * Initial release (Closes: #647171)
+
+ -- Julien Danjou <acid@debian.org>  Wed, 02 Nov 2011 16:49:09 +0100

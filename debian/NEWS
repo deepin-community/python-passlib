@@ -1,0 +1,6 @@
+python-passlib (1.6.5-4) unstable; urgency=medium
+
+  The Django support has been disabled in this package, see
+  https://bitbucket.org/ecollins/passlib/issues/68/tests-fail-with-django-19
+
+ -- Brian May <bam@debian.org>  Sun, 03 Jan 2016 14:05:21 +1100
